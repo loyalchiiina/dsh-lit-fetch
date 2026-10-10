@@ -1,29 +1,51 @@
 {
   "name": "dsh-lit-fetch",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "type": "module",
   "main": "lib/index.js",
   "exports": {
     ".": "./lib/index.js",
     "./package.json": "./package.json"
   },
-  "files": ["lib/**/*.js", "cordis.patch.yml", "README.md", "LICENSE"],
+  "files": [
+    "lib/**/*.js",
+    "cordis.patch.yml",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
   "license": "MIT",
   "description": "DSH literature fetcher: search academic papers via DOI, download PDFs through Sci-Hub mirrors and Open Access fallback, generate batch access HTML manifests.",
-  "keywords": ["dsh-plugin", "deepseek-harness", "literature", "scihub", "doi", "pdf-download", "academic"],
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "literature",
+    "scihub",
+    "doi",
+    "pdf-download",
+    "academic"
+  ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/loyalchiiina/dsh-lit-fetch"
+    "url": "git+https://github.com/loyalchiiina/dsh-lit-fetch.git"
+  },
+  "homepage": "https://github.com/loyalchiiina/dsh-lit-fetch#readme",
+  "bugs": {
+    "url": "https://github.com/loyalchiiina/dsh-lit-fetch/issues"
   },
   "dsh": {
-    "bundle": { "patch": "./cordis.patch.yml" }
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
   },
   "peerDependencies": {
     "@deepseek-ai/cordis": "^4.0.2",
-    "@deepseek-ai/dsh": ">=0.1.7-rc.1"
+    "@deepseek-ai/dsh": ">=0.1.7-rc.1",
+    "@deepseek-ai/dsh-tools": "^0.1.7-rc.1 || ^0.2.0-rc.1"
   },
   "devDependencies": {
     "@deepseek-ai/cordis": "^4.0.2",
-    "@deepseek-ai/dsh": ">=0.1.7-rc.1"
+    "@deepseek-ai/dsh": ">=0.1.7-rc.1",
+    "@deepseek-ai/dsh-tools": "^0.1.7-rc.1 || ^0.2.0-rc.1"
   }
 }
