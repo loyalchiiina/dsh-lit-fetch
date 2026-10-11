@@ -1,5 +1,17 @@
 # Changelog
 
+## 1.0.3 — 2026-10-11
+
+### Fixed · 修复
+
+- **`/lit-fetch` 路由响应硬编码 `version: '1.0.0'`**：1.0.2 升版时漏改了这一行，
+  package.json 是 1.0.2 而路由自查 1.0.0（纯展示性问题，功能不受影响）。
+  修法：新增顶部常量 `PKG_VERSION`，用 `readFileSync(new URL('../package.json', import.meta.url))`
+  **从 package.json 动态取值**，以后升版只改 package.json 一处，路由版本永不再漂移。
+  · The `/lit-fetch` route hard-coded `version: '1.0.0'` (missed during the 1.0.2 bump).
+  Now read dynamically from package.json via `PKG_VERSION`, so the route can never
+  drift from the package version again.
+
 ## 1.0.2 — 2026-10-10
 
 ### Fixed · 修复

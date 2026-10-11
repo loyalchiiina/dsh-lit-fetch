@@ -1,6 +1,6 @@
 {
   "name": "dsh-lit-fetch",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "type": "module",
   "main": "lib/index.js",
   "exports": {
