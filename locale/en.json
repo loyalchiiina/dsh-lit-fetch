@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Lit Fetch",
+    "description": "Fetch any web page and hand the model clean, readable text instead of raw HTML."
+  }
+}

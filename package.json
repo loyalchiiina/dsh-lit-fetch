@@ -1,18 +1,27 @@
 {
   "name": "dsh-lit-fetch",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "type": "module",
   "main": "lib/index.js",
   "exports": {
     ".": "./lib/index.js",
-    "./package.json": "./package.json"
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
   },
   "files": [
+    "lib",
     "lib/**/*.js",
     "cordis.patch.yml",
     "README.md",
     "CHANGELOG.md",
-    "LICENSE"
+    "LICENSE",
+    "locale/*.json",
+    "icon.svg",
+    "README-zh.md",
+    "README-es.md",
+    "README-pt.md",
+    "README-hi.md"
   ],
   "license": "MIT",
   "description": "DSH literature fetcher: search academic papers via DOI, download PDFs through Sci-Hub mirrors and Open Access fallback, generate batch access HTML manifests.",
@@ -47,5 +56,9 @@
     "@deepseek-ai/cordis": "^4.0.2",
     "@deepseek-ai/dsh": ">=0.1.7-rc.1",
     "@deepseek-ai/dsh-tools": "^0.1.7-rc.1 || ^0.2.0-rc.1"
-  }
+  },
+  "engines": {
+    "node": "^22.19.0 || >=24.0.0"
+  },
+  "packageManager": "pnpm@11.7.0"
 }
