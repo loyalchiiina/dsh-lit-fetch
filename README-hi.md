@@ -1,6 +1,6 @@
-# Lit Fetch
+# dsh-lit-fetch · अकादमिक साहित्य खोज और PDF डाउनलोड
 
-> Fetch any web page and hand the model clean, readable text instead of raw HTML.
+> DOI या कीवर्ड से शोध-पत्र खोजें, Sci-Hub मिरर से PDF डाउनलोड करें (Unpaywall ओपन-एक्सेस फ़ॉलबैक सहित), और बैच-प्राप्ति HTML सूची बनाएँ। **यह वेब-पेज टेक्स्ट एक्सट्रैक्टर नहीं है।**
 
 > Full documentation: [English README](./README.md)
 

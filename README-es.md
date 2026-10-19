@@ -1,6 +1,6 @@
-# Lit Fetch
+# dsh-lit-fetch · Búsqueda y descarga de literatura académica
 
-> Fetch any web page and hand the model clean, readable text instead of raw HTML.
+> Busca artículos académicos por DOI o palabra clave, descarga sus PDF a través de los espejos de Sci-Hub con respaldo de acceso abierto (Unpaywall) y genera un manifiesto HTML de obtención por lotes. **No es un extractor de texto de páginas web.**
 
 > Full documentation: [English README](./README.md)
 

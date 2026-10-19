@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "Lit Fetch",
-    "description": "Fetch any web page and hand the model clean, readable text instead of raw HTML."
+    "title": "Literature Search & Fetch",
+    "description": "Academic literature search and PDF download: look up papers by DOI or keyword (Crossref/OpenAlex), fetch PDFs through Sci-Hub mirrors with a Unpaywall open-access fallback, and generate a batch-access manifest. Not a web-page text extractor."
   }
 }

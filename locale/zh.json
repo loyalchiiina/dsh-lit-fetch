@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "轻量抓取",
-    "description": "抓取任意网页，把干净的正文交给模型，而不是原始 HTML。"
+    "title": "学术文献检索与下载",
+    "description": "学术文献检索与 PDF 下载：按 DOI 或关键词查文献（Crossref/OpenAlex），遍历 Sci-Hub 镜像下载 PDF 并以 Unpaywall 开放获取兜底，生成批量获取清单。不是网页正文抓取工具。"
   }
 }

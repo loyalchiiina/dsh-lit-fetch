@@ -1,6 +1,6 @@
 {
   "name": "dsh-lit-fetch",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "type": "module",
   "main": "lib/index.js",
   "exports": {
@@ -24,7 +24,7 @@
     "README-hi.md"
   ],
   "license": "MIT",
-  "description": "DSH literature fetcher: search academic papers via DOI, download PDFs through Sci-Hub mirrors and Open Access fallback, generate batch access HTML manifests.",
+  "description": "学术文献检索与 PDF 下载 / Academic literature search & PDF download — 按 DOI（Crossref）或关键词（OpenAlex）检索文献元数据，遍历 8 个 Sci-Hub 镜像下载 PDF 并以 Unpaywall 开放获取兜底，校验 %PDF- 魔数与最小体积，生成可点击的批量获取清单 HTML。不是网页正文抓取工具。 · Looks up papers by DOI (Crossref) or keyword (OpenAlex), downloads PDFs through 8 Sci-Hub mirrors with an Unpaywall open-access fallback, validates %PDF- magic bytes and minimum size, and emits a clickable batch-access HTML manifest. Not a web-page text extractor.",
   "keywords": [
     "dsh-plugin",
     "deepseek-harness",
