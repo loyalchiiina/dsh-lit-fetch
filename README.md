@@ -1,5 +1,10 @@
 # dsh-lit-fetch
 
+> **功能描述**：免费文献下载：给 DOI、标题或作者就能定位论文，走开放获取渠道拿到 PDF，不需要付费订阅，也不需要 API Key。适配 DSH 内核 0.2.2-rc.1。
+>
+> **English**: Free literature fetching: give it a DOI, a title or an author and it locates the paper and pulls the PDF through open-access routes, with no paid subscription and no API key. Adapts DSH kernel 0.2.2-rc.1.
+
+
 DSH literature fetcher — search academic papers, download PDFs by DOI (Sci-Hub mirrors with Open Access fallback), and generate a batch-access HTML manifest.
 
 DSH 文献获取插件 — 快捷搜索学术文献、通过 DOI 批量下载 PDF（Sci-Hub 镜像 + 开放获取兜底）、生成批量获取清单 HTML。
