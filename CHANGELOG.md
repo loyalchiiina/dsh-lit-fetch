@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.0.6 — 2026-11-09
+
+### 配图与市场资产（无功能改动 · assets-only）
+
+`lib/*.js` 未改动，仅新增配图资产并放行打包白名单。
+
+- 新增 `screenshots.json` 与 `docs/screenshots/01-manifest-overview.png`（批量获取入口清单页实拍），并加入 `files` 白名单，使插件市场卡片与 npm 包内均可显示配图。
+
 ## 1.0.5 — 2026-10-19
 
 ### 文档纠错（无功能改动 · documentation-only）
