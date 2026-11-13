@@ -113,16 +113,24 @@
 ## 三、安装
 
 ```bash
-dsh plugin --profile desktop add dsh-lit-fetch
+# 桌面端不要用 CLI 装：desktop profile 由 Electron 独占管理，
+# 执行 dsh plugin --profile desktop ... 会被直接拒绝
+# （报 profile "desktop" is managed exclusively by the Electron application）
+# 装到 web profile（该 profile 不走 Electron 独占管理）：
+dsh plugin --profile web add dsh-lit-fetch
 ```
 
-或本地链接安装：
+装到 **desktop** 请走 DSH 客户端的插件市场 / 本地安装，或按下文「本地安装」。
+
+或本地安装（**不要用 `link:` / `file:`**）：
 
 ```bash
 cp -r dsh-lit-fetch ~/.dsh/local-plugins/
-# 再在 profile 的 package.json 里加：
-# "dsh-lit-fetch": "link:C:/Users/<你>/.dsh/local-plugins/dsh-lit-fetch"
 ```
+
+再把包的真实副本放进目标 profile 的 `node_modules` 目录，并在该 profile 的 `package.json` 里登记两处：`dependencies` 写 `"dsh-lit-fetch": "<版本号>"`，`dsh.profile.bundles` 数组里加 `"dsh-lit-fetch"`。
+
+> ⚠️ 不要写 `"dsh-lit-fetch": "link:C:/Users/<你>/.dsh/local-plugins/dsh-lit-fetch"` 或 `file:...`：这类依赖会让 pnpm 反复重建链接，触发**安装恢复死循环** —— 插件装不上，还会拖住客户端启动。
 
 插件通过 `cordis.patch.yml` 以 `insert` 方式把自己的 id/name 挂进宿主，注入 `tools` 与 `webServer` 两个服务。
 

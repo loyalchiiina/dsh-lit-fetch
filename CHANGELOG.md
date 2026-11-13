@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.7 — 2026-11-13
+
+### 文档修正（功能一致性审计）
+- 安装命令改正：desktop profile 由 Electron 独占，CLI 会直接拒绝；装 web 用 `--profile web add`，装 desktop 走市场 / 本地安装。
+- 删除 `link:` / `file:` 教法并加 ⚠️ 提示：会触发 DSH 安装恢复死循环，正确做法是把真实副本放进 profile 的 `node_modules` + 依赖写版本号 + `dsh.profile.bundles` 加包名。
+
 ## 1.0.6 — 2026-11-09
 
 ### 配图与市场资产（无功能改动 · assets-only）

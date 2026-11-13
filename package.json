@@ -1,6 +1,6 @@
 {
   "name": "dsh-lit-fetch",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "type": "module",
   "main": "lib/index.js",
   "exports": {
@@ -45,6 +45,8 @@
     "url": "https://github.com/loyalchiiina/dsh-lit-fetch/issues"
   },
   "dsh": {
+    "labels": ["remote-access"],
+    "capabilities": ["network:egress", "network:ingress", "tools:register"],
     "bundle": {
       "patch": "./cordis.patch.yml"
     }

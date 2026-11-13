@@ -1,11 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="dsh-lit-fetch">
-  <defs>
-    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#4F6BED"/>
-      <stop offset="100%" stop-color="#7C3AED"/>
-    </linearGradient>
-  </defs>
-  <rect x="2" y="2" width="60" height="60" rx="14" fill="url(#g)"/>
-  <text x="32" y="41" font-family="-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif"
-        font-size="26" font-weight="700" fill="#ffffff" text-anchor="middle">LF</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" width="36" height="36" role="img" aria-label="fast fetch" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M18 6.5v13" />
+  <path d="M12.6 15.4L18 20.8l5.4-5.4" />
+  <path d="M7.5 24.5v3a2.5 2.5 0 0 0 2.5 2.5h16a2.5 2.5 0 0 0 2.5-2.5v-3" />
+  <path d="M27.5 9.5l2-2" />
 </svg>
